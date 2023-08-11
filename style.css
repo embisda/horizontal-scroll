@@ -1,0 +1,44 @@
+.compare {
+    overflow: hidden;
+    user-select: none;
+}
+
+.compare::-webkit-scrollbar {
+    display: none;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.highlight {
+    color: blue;
+}
+
+@media (max-width: 684px) {
+    .compare {
+        overflow-x: scroll;
+    }
+    
+    .compare:hover {
+        cursor: grab;
+    }
+
+    .compare:active {
+        cursor: grabbing;
+    }
+    
+    table {
+        table-layout: auto;
+    }
+}
+/*---------------------------------------*/
+.table-scroll {
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.table-scroll::-webkit-scrollbar {
+    display: none;
+}

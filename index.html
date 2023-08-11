@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Скрол: CSS и JS</h2>
+    <p>Drag n drop, но нельзя выделить текст</p>
+    <div id="compare" class="compare">
+        <table>
+            <thead>
+                <tr>
+                    <th><h2>Сравнение</h2></th>
+                    <th><p>Фирма 1</p></th>
+                    <th><p>Фирма 2</p></th>
+                    <th><p>Фирма 3</p></th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3>Объект исследования</h3></td>
+                    <td><p class="highlight">Цифровые продукты 1</p></td>
+                    <td><p>Цифровые продукты 2</p></td>
+                    <td><p>Цифровые продукты 3</p></td>
+                </tr>
+                <tr>
+                    <td><h3>Показатели</h3></td>
+                    <td><p class="highlight">74&nbsp;параметра</p></td>
+                    <td><p>72&nbsp;параметра</p></td>
+                    <td><p>62&nbsp;параметра</p></td>
+                </tr>
+                <tr>
+                    <td><h3>Результат оценки</h3></td>
+                    <td><p class="highlight">Подробная статья с&nbsp;разбором 1</p></td>
+                    <td><p>Подробная статья с&nbsp;разбором 2</p></td>
+                    <td><p>Подробная статья с&nbsp;разбором 3</p></td>
+                </tr>
+                <tr>
+                    <td><h3>Цена</h3></td>
+                    <td><p class="highlight">Бесплатно</p></td>
+                    <td><p>Бесплатно</p></td>
+                    <td><p>Бесплатно</p></td>
+                </tr>
+                <tr>
+                    <td><h3>Плюсы</h3></td>
+                    <td><p class="highlight">Автоматическая проверка за&nbsp;несколько минут</p></td>
+                    <td><p>Автоматическая проверка за&nbsp;несколько минут</p></td>
+                    <td><p>Автоматическая проверка за&nbsp;несколько минут</p></td>
+                </tr>
+                <tr>
+                    <td><h3>Минусы</h3></td>
+                    <td><p class="highlight">&mdash;</p></td>
+                    <td><p>&mdash;</p></td>
+                    <td><p>&mdash;</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Скрол: CSS</h2>
+    <p>Работает только на мобильных устройствах с тач скрином. На десктопе работает выделение текста</p>
+    <div id="app" class="table-scroll">
+        <table width="100%" border="0" cellspacing="5" cellpadding="0" id="myTable" class="tablesorter">
+            <thead>
+                <tr>
+                    <th class="header headerSortUp"><span class="sortable">Год</span></th>
+                    <th class="header"><span class="sortable">Проект</span></th>
+                    <th class="header"><span class="sortable">Описание</span></th>
+                    <th class="header"><span class="sortable">Ссылки</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="project">
+                    <td><p class="project__year">2023</p></td>
+                    <td><p class="project__name">Проект</p></td>
+                    <td><p class="project__description">Описание проекта</p></td>
+                    <td>
+                        <div class="links">
+                            <a href="#">Ссылка 1</a>
+                            <a href="#">Ссылка 2</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project">
+                    <td><p class="project__year">2022</p></td>
+                    <td><p class="project__name">Проект</p></td>
+                    <td><p class="project__description">Описание проекта</p></td>
+                    <td>
+                        <div class="links">
+                            <a href="#">Ссылка 1</a>
+                            <a href="#">Ссылка 2</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project">
+                    <td><p class="project__year">2021</p></td>
+                    <td><p class="project__name">Проект</p></td>
+                    <td><p class="project__description">Описание проекта</p></td>
+                    <td>
+                        <div class="links">
+                            <a href="#">Ссылка 1</a>
+                            <a href="#">Ссылка 2</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
